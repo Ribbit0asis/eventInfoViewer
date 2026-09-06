@@ -839,7 +839,7 @@
         "boothNo":  "-",
         "name":  "STORM",
         "urlSns":  "https://x.com/storm_btopc",
-        "urlPage":  "stormst.com/page/tgs2026",
+        "urlPage":  "https://stormst.com/page/tgs2026",
         "informationUrl":  [
                                "https://x.com/storm_btopc/status/2095799034858369532?s=20"
                            ],
@@ -1324,8 +1324,8 @@
         "informationUrl":  [
                                "https://x.com/nexon_shikyoku/status/2091758465396199674?s=20",
                                "https://x.com/Fareidolia_JP/status/2095799050268557646?s=20",
-                               "https://x.com/MabinogiM_JP/status/2091855552821526932?s=20",
-                               "https://x.com/mabinogim_jp/status/2091855552821526932?s=61"
+                               "https://x.com/Fareidolia_JP/status/2095436654710554956?s=20",
+                               "https://x.com/MabinogiM_JP/status/2091855552821526932?s=20"
                            ],
         "performerSns":  [
 
