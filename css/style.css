@@ -395,12 +395,27 @@ body {
   outline-offset: 2px;
 }
 .booth-overlay {
-  background-color: rgba(0, 102, 255, 0.2);
+  background-color: rgba(0, 102, 255, 0.3);
   cursor: pointer;
   pointer-events: auto;
+  display: flex !important;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+  font-weight: bold;
+  color: #262626;
+  user-select: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  container-type: size;
+}
+.booth-overlay-label {
+  font-size: 18cqmax;
 }
 .booth-overlay--planned {
-  background-color: rgba(255, 0, 59, 0.35);
+  background-color: rgba(255, 0, 59, 0.6);
+  color: #fff;
 }
 .booth-overlay--active {
   outline: 2px solid #ff9800;
@@ -432,6 +447,7 @@ body {
   .sidebar-toggle-btn { display: block; }
   #app-body.sidebar-expanded #viewer { display: none; }
   #app-body.sidebar-expanded #sidebar { flex: 1 1 auto; }
+  .booth-overlay { font-size: 6px; }
 }
 
 body.map-hidden #viewer { display: none; }

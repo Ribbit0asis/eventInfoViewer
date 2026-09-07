@@ -1,5 +1,25 @@
 ﻿[
     {
+        "id":  "1",
+        "boothNo":  "05-C04",
+        "name":  "4Gamer.net",
+        "urlSns":  "https://x.com/4GamerNews",
+        "urlPage":  "",
+        "informationUrl":  [
+                               "https://x.com/SlashZeroJP/status/2096403007244243068?s=20"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
+        "x":  100,
+        "y":  100,
+        "w":  100,
+        "h":  100
+    },
+    {
         "id":  "10",
         "boothNo":  "06-C02",
         "name":  "AORUS",
@@ -32,11 +52,31 @@
     {
         "id":  "17",
         "boothNo":  "-",
-        "name":  "ASTRA（Astro Production）",
+        "name":  "ASTRA",
         "urlSns":  "https://x.com/astropro_info",
         "urlPage":  "",
         "informationUrl":  [
                                "https://x.com/MoonHack2125/status/2094726965282701499?s=20"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
+        "x":  0,
+        "y":  0,
+        "w":  0,
+        "h":  0
+    },
+    {
+        "id":  "16",
+        "boothNo":  "-",
+        "name":  "Astrae Oratio",
+        "urlSns":  "https://x.com/Asora_JP",
+        "urlPage":  "https://astraeoratio.plaync.com/ja-jp/conts/2026tgs",
+        "informationUrl":  [
+                               "https://x.com/Asora_JP/status/2096796850267505056?s=20"
                            ],
         "performerSns":  [
 
@@ -57,6 +97,29 @@
         "urlPage":  "https://www.avermedia.co.jp/event/TGS2026/",
         "informationUrl":  [
                                "https://x.com/avermediajapan/status/2094746548286763282?s=61"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
+        "x":  0,
+        "y":  0,
+        "w":  0,
+        "h":  0
+    },
+    {
+        "id":  "29",
+        "boothNo":  "-",
+        "name":  "Beep Japan / Serenity Forge",
+        "urlSns":  "",
+        "urlPage":  "",
+        "informationUrl":  [
+                               "https://x.com/BeepCompany/status/2094720876738699402?s=20",
+                               "https://x.com/BeepCompany/status/2094964530719961101?s=20",
+                               "https://x.com/BeepCompany/status/2095738442978316512?s=20",
+                               "https://x.com/BeepCompany/status/2096761436471214540?s=20"
                            ],
         "performerSns":  [
 
@@ -96,6 +159,7 @@
         "urlSns":  "https://x.com/brookjapan?s=11",
         "urlPage":  "",
         "informationUrl":  [
+                               "https://x.com/BrookJapan/status/2096795594979148256?s=20",
                                "https://x.com/brookjapan/status/2093171728683848161?s=61"
                            ],
         "performerSns":  [
@@ -131,9 +195,31 @@
         "h":  0
     },
     {
+        "id":  "366",
+        "boothNo":  "01-C13",
+        "name":  "Crowxis（玄人志向）",
+        "urlSns":  "https://x.com/crowxis_jp",
+        "urlPage":  "",
+        "informationUrl":  [
+                               "https://x.com/crowxis_jp/status/2094651323467907292?s=20",
+                               "https://x.com/crowxis_jp/status/2095466839593594988?s=20",
+                               "https://x.com/crowxis_jp/status/2096433212264452424?s=20"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
+        "x":  0,
+        "y":  0,
+        "w":  0,
+        "h":  0
+    },
+    {
         "id":  "54",
         "boothNo":  "-",
-        "name":  "DMM GAMES (EXNOA)",
+        "name":  "DMM GAMES",
         "urlSns":  "https://x.com/dmmolg_com",
         "urlPage":  "https://tgs2026.dmmgames-official.com/?utm_content=000000\u0026utm_source=Twitter\u0026utm_medium=pure\u0026utm_campaign=nml",
         "informationUrl":  [
@@ -141,6 +227,7 @@
                                "https://x.com/dmmolg_com/status/2090364445847638086?s=61",
                                "https://x.com/touken_puzzle/status/2090287711592812745?s=61",
                                "https://x.com/machisuba/status/2090289007557239063?s=61",
+                               "https://x.com/machisuba/status/2096795592756511195?s=20",
                                "https://x.com/muvluv_official/status/2090289976806404302?s=61",
                                "https://x.com/muvluv_gg/status/2090348108735729756?s=61",
                                "https://x.com/muvluv_gg/status/2091103093374980474?s=61",
@@ -149,7 +236,9 @@
                                "https://x.com/kamihimeproject/status/2090363222196961315?s=61",
                                "https://x.com/koihimetaisen/status/2090348112699138243?s=20",
                                "https://x.com/koihimetaisen/status/2094364580197921176?s=20",
-                               "https://x.com/dot_abyss_pr/status/2090363787014750489?s=20"
+                               "https://x.com/dot_abyss_pr/status/2090363787014750489?s=20",
+                               "https://x.com/s_i_project/status/2090302579339362338?s=20",
+                               "https://x.com/s_i_project/status/2095799987225677935?s=20"
                            ],
         "performerSns":  [
                              {
@@ -254,6 +343,26 @@
         "performerPost":  {
 
                           },
+        "x":  701,
+        "y":  1436,
+        "w":  151,
+        "h":  78
+    },
+    {
+        "id":  "565",
+        "boothNo":  "09-E27",
+        "name":  "Edentopia",
+        "urlSns":  "https://x.com/edentopiagame",
+        "urlPage":  "",
+        "informationUrl":  [
+                               "https://x.com/edentopiagame/status/2096449129165820036?s=20"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
         "x":  0,
         "y":  0,
         "w":  0,
@@ -302,13 +411,19 @@
     {
         "id":  "86",
         "boothNo":  "08-N06",
-        "name":  "G TUNE·NEXTGEAR(マウスコンピューター)",
+        "name":  "G TUNE·NEXTGEAR",
         "urlSns":  "https://x.com/GTUNE_NEXTGEAR",
         "urlPage":  "https://www.mouse-jp.co.jp/store/e/ea1021602/?utm_source=x\u0026utm_medium=social_g\u0026utm_campaign=others\u0026utm_term=featured\u0026utm_content=260807a03",
         "informationUrl":  [
+                               "https://x.com/drecs_jp/status/2096161420677149180?s=20",
+                               "https://x.com/drecs_jp/status/2096523805640311285?s=20",
+                               "https://x.com/drecs_jp/status/2096886190662418625?s=20",
                                "https://x.com/GTUNE_NEXTGEAR/status/2085562595449467057?s=20",
                                "https://x.com/GTUNE_NEXTGEAR/status/2095814503992901766?s=20",
-                               "https://x.com/Rainbow6JP/status/2095693377354248541?s=20"
+                               "https://x.com/Rainbow6JP/status/2095693377354248541?s=20",
+                               "https://x.com/GTUNE_NEXTGEAR/status/2096176715483722135?s=20",
+                               "https://x.com/GTUNE_NEXTGEAR/status/2096901477981945918?s=20",
+                               "https://x.com/GTUNE_NEXTGEAR/status/2096539034759909435?s=20"
                            ],
         "performerSns":  [
                              {
@@ -325,7 +440,7 @@
     {
         "id":  "87",
         "boothNo":  "02-C21",
-        "name":  "GALLERIA(サードウェーブ)",
+        "name":  "GALLERIA",
         "urlSns":  "https://x.com/GALLERIA_GM",
         "urlPage":  "https://www.dospara.co.jp/gamepc/cts-tgs2026.html",
         "informationUrl":  [
@@ -440,16 +555,21 @@
                              {
                                  "name":  "イトウ",
                                  "url":  "https://x.com/cosplay_110"
+                             },
+                             {
+                                 "name":  "たぶ子",
+                                 "url":  "https://x.com/TAB_c001"
                              }
                          ],
         "performerPost":  [
                               "https://x.com/nekoze__tt/status/2095078791689441544?s=20",
-                              "https://x.com/cosplay_110/status/2095801424273899642?s=20"
+                              "https://x.com/cosplay_110/status/2095801424273899642?s=20",
+                              "https://x.com/TAB_c001/status/2096938079097610329?s=20"
                           ],
-        "x":  0,
-        "y":  0,
-        "w":  0,
-        "h":  0
+        "x":  1134,
+        "y":  2105,
+        "w":  113,
+        "h":  111
     },
     {
         "id":  "160",
@@ -472,13 +592,35 @@
         "h":  0
     },
     {
+        "id":  "459",
+        "boothNo":  "05-C01",
+        "name":  "Lenovo",
+        "urlSns":  "https://x.com/LEGION_JP",
+        "urlPage":  "https://www.lenovo.com/jp/ja/tgs2026/?cid=jp:other:799gj6\u0026utm_source=Other\u0026utm_medium=mkt_xpost\u0026utm_campaign=Legion_TGS",
+        "informationUrl":  [
+                               "https://x.com/LEGION_JP/status/2092416740286177650?s=20",
+                               "https://x.com/LEGION_JP/status/2096871089200583121?s=20"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
+        "x":  0,
+        "y":  0,
+        "w":  0,
+        "h":  0
+    },
+    {
         "id":  "163",
         "boothNo":  "05-C02",
         "name":  "LINE GAME",
         "urlSns":  "",
         "urlPage":  "https://game.line.me/ja/tgs2026/",
         "informationUrl":  [
-                               "https://x.com/LINEGAME_Japan/status/2095400146565800331?s=20"
+                               "https://x.com/LINEGAME_Japan/status/2095400146565800331?s=20",
+                               "https://x.com/LINEGAME_Japan/status/2096871095500759263?s=20"
                            ],
         "performerSns":  [
 
@@ -541,10 +683,10 @@
         "performerPost":  {
 
                           },
-        "x":  0,
-        "y":  0,
-        "w":  0,
-        "h":  0
+        "x":  882,
+        "y":  1435,
+        "w":  229,
+        "h":  189
     },
     {
         "id":  "183",
@@ -596,8 +738,10 @@
                                "https://x.com/Netmarble_JP/status/2079431643597771238?s=20",
                                "https://x.com/shanfro_nana/status/2094621276606197770?s=61",
                                "https://x.com/ShanFro_nana/status/2095059153798725918?s=20",
+                               "https://x.com/ShanFro_nana/status/2096146315684335814?s=20",
                                "https://x.com/pearl_in_blue/status/2088181329922068852?s=61",
                                "https://x.com/Netmarble_JP/status/2095456527582978547?s=20",
+                               "https://x.com/Netmarble_JP/status/2096850328981545042?s=20",
                                "https://x.com/Netmarble_JP/status/2095074253809086483?s=20",
                                "https://x.com/Sololv_KARMA_JP/status/2095024041136627883?s=20",
                                "https://x.com/Sololv_KARMA_JP/status/2095818252350005625?s=20"
@@ -686,6 +830,14 @@
                              {
                                  "name":  "あきれいいち",
                                  "url":  "https://x.com/re_chi0119"
+                             },
+                             {
+                                 "name":  "えなこ",
+                                 "url":  "https://x.com/enako_cos"
+                             },
+                             {
+                                 "name":  "南あみ",
+                                 "url":  "https://x.com/amichan_0907"
                              }
                          ],
         "performerPost":  [
@@ -694,8 +846,14 @@
                               "https://x.com/posuposupaaan/status/2095461691085771015?s=20",
                               "https://x.com/Nimo_mizuumi/status/2095836639520252338?s=20",
                               "https://x.com/ao_harapeco22/status/2095790631197217087?s=20",
+                              "https://x.com/dmbs_mh/status/2096558484343128375?s=20",
+                              "https://x.com/lemo_kurone/status/2096803635326062884?s=20",
+                              "https://x.com/keekoriiin/status/2096552194535542940?s=20",
                               "https://x.com/stealthnyancos/status/2095830665237533054?s=20",
-                              "https://x.com/ElliePuroresu/status/2094746915665567861?s=20"
+                              "https://x.com/ElliePuroresu/status/2094746915665567861?s=20",
+                              "https://x.com/re_chi0119/status/2096902751641108885?s=20",
+                              "https://x.com/ShanFro_nana/status/2096795593993601399?s=20",
+                              "https://x.com/ShanFro_nana/status/2096508704355238322?s=20"
                           ],
         "x":  0,
         "y":  0,
@@ -719,6 +877,7 @@
                                "https://x.com/cps_niconico/status/2095786204017103350?s=20",
                                "https://x.com/DDFF_JP/status/2095346041939976227?s=20",
                                "https://x.com/DDFF_JP/status/2095346292432249032?s=20",
+                               "https://x.com/DDFF_JP/status/2096519245178020109?s=20",
                                "https://x.com/touken_puzzle/status/2094636366676259005?s=20",
                                "https://x.com/puchipoyon_jp/status/2094729613276803375?s=20"
                            ],
@@ -741,26 +900,6 @@
         "urlPage":  "https://games.parco.jp/",
         "informationUrl":  [
 
-                           ],
-        "performerSns":  [
-
-                         ],
-        "performerPost":  {
-
-                          },
-        "x":  0,
-        "y":  0,
-        "w":  0,
-        "h":  0
-    },
-    {
-        "id":  "209",
-        "boothNo":  "10-C03",
-        "name":  "PCCS／声優e-Sports部",
-        "urlSns":  "",
-        "urlPage":  "",
-        "informationUrl":  [
-                               "https://x.com/seiyu_esports/status/2094712258962268666?s=61"
                            ],
         "performerSns":  [
 
@@ -800,7 +939,29 @@
         "urlSns":  "https://x.com/razbamjapan?s=11",
         "urlPage":  "https://razbam-jp.com/2026/08/17/tgs2026-press-release/",
         "informationUrl":  [
-                               "https://x.com/razbamjapan/status/2092207564134195449?s=61"
+                               "https://x.com/razbamjapan/status/2092207564134195449?s=61",
+                               "https://x.com/RazbamJapan/status/2096176494787932540?s=20"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
+        "x":  0,
+        "y":  0,
+        "w":  0,
+        "h":  0
+    },
+    {
+        "id":  "571",
+        "boothNo":  "09-E23",
+        "name":  "RED BRICK HOUSE",
+        "urlSns":  "https://x.com/studionemo_de",
+        "urlPage":  "https://redbrickhouse.gg/",
+        "informationUrl":  [
+                               "https://x.com/studionemo_de/status/2094979221215216042?s=20",
+                               "https://x.com/studionemo_de/status/2096809458768945364?s=20"
                            ],
         "performerSns":  [
 
@@ -842,6 +1003,26 @@
         "urlPage":  "https://stormst.com/page/tgs2026",
         "informationUrl":  [
                                "https://x.com/storm_btopc/status/2095799034858369532?s=20"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
+        "x":  0,
+        "y":  0,
+        "w":  0,
+        "h":  0
+    },
+    {
+        "id":  "376",
+        "boothNo":  "-",
+        "name":  "StudioWink",
+        "urlSns":  "https://x.com/StudioWink00",
+        "urlPage":  "",
+        "informationUrl":  [
+                               "https://x.com/StudioWink00/status/2095711104995639310?s=20"
                            ],
         "performerSns":  [
 
@@ -960,13 +1141,80 @@
         "h":  0
     },
     {
+        "id":  "569",
+        "boothNo":  "08-C23",
+        "name":  "アイオーデータ",
+        "urlSns":  "https://x.com/GigaCrysta_io",
+        "urlPage":  "https://www.iodata.jp/news/2026/information/tgs2026.htm",
+        "informationUrl":  [
+                               "https://x.com/GigaCrysta_io/status/2094670346742088061?s=20",
+                               "https://x.com/GigaCrysta_io/status/2096845344793567536?s=20"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
+        "x":  0,
+        "y":  0,
+        "w":  0,
+        "h":  0
+    },
+    {
+        "id":  "564",
+        "boothNo":  "-",
+        "name":  "アウタープレーン",
+        "urlSns":  "https://x.com/OP_TWT_JP",
+        "urlPage":  "",
+        "informationUrl":  [
+                               "https://x.com/OP_TWT_JP/status/2096178750857908266?s=20"
+                           ],
+        "performerSns":  [
+                             {
+                                 "name":  "죠미(Jomi)",
+                                 "url":  "https://x.com/jomi_cos_"
+                             },
+                             {
+                                 "name":  "요나 | Yona | よな | 优娜",
+                                 "url":  "https://x.com/yona_pip"
+                             }
+                         ],
+        "performerPost":  "https://x.com/jomi_cos_/status/2096184521221894384?s=20",
+        "x":  0,
+        "y":  0,
+        "w":  0,
+        "h":  0
+    },
+    {
+        "id":  "568",
+        "boothNo":  "09-E69",
+        "name":  "アスク・アウリン・関家具",
+        "urlSns":  "",
+        "urlPage":  "",
+        "informationUrl":  [
+                               "https://x.com/ergohuman_jp/status/2095700878275858891?s=20",
+                               "https://x.com/contieaks/status/2095723555615125899?s=20"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
+        "x":  0,
+        "y":  0,
+        "w":  0,
+        "h":  0
+    },
+    {
         "id":  "324",
         "boothNo":  "-",
         "name":  "アニプレックス",
         "urlSns":  "https://x.com/aniplex_info",
         "urlPage":  "https://www.aniplex.co.jp/tgs/",
         "informationUrl":  [
-                               "https://x.com/aniplex_info/status/2095834257067266444?s=20",
+                               "https://x.com/aniplex_info/status/2095834762338517063?s=20",
                                "https://x.com/aniplex_info/status/2095834508633297093?s=20",
                                "https://x.com/Fate_EX_Record/status/2095834291553087951?s=20",
                                "https://x.com/MB_LUMINA/status/2083787376879669687?s=20"
@@ -991,6 +1239,26 @@
         "h":  0
     },
     {
+        "id":  "328",
+        "boothNo":  "10-C07",
+        "name":  "アユートAudio事業部",
+        "urlSns":  "https://x.com/aiuto_audio",
+        "urlPage":  "https://www.aiuto-jp.co.jp/information/entry_2717.php",
+        "informationUrl":  [
+                               "https://x.com/aiuto_audio/status/2096845176262307918?s=20"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
+        "x":  0,
+        "y":  0,
+        "w":  0,
+        "h":  0
+    },
+    {
         "id":  "336",
         "boothNo":  "06-C05",
         "name":  "インティ·クリエイツ",
@@ -998,7 +1266,10 @@
         "urlPage":  "",
         "informationUrl":  [
                                "https://x.com/GunvoltOfficial/status/2092809328684159245?s=20",
-                               "https://x.com/GunvoltOfficial/status/2095346134344667313?s=20"
+                               "https://x.com/GunvoltOfficial/status/2095708435002376444?s=20",
+                               "https://x.com/GunvoltOfficial/status/2096070815804485920?s=20",
+                               "https://x.com/GunvoltOfficial/status/2096433209273909255?s=20",
+                               "https://x.com/GunvoltOfficial/status/2096191627689607401?s=20"
                            ],
         "performerSns":  [
                              {
@@ -1068,6 +1339,30 @@
         "h":  0
     },
     {
+        "id":  "355",
+        "boothNo":  "08-N25",
+        "name":  "ケムコ",
+        "urlSns":  "https://x.com/KEMCO_OFFICIAL",
+        "urlPage":  "https://www.kemco.jp/game/tgs2026/ja/",
+        "informationUrl":  [
+                               "https://x.com/KEMCO_OFFICIAL/status/2096796147511886150?s=20",
+                               "https://x.com/KEMCO_OFFICIAL/status/2096822958161613053?s=20",
+                               "https://x.com/KEMCO_OFFICIAL/status/2096828031155441988?s=20",
+                               "https://x.com/KEMCO_OFFICIAL/status/2096833659093586154?s=20",
+                               "https://x.com/KEMCO_OFFICIAL/status/2096837183198162944?s=20"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
+        "x":  0,
+        "y":  0,
+        "w":  0,
+        "h":  0
+    },
+    {
         "id":  "356",
         "boothNo":  "-",
         "name":  "コーエーテクモゲームス",
@@ -1108,7 +1403,9 @@
                                "https://x.com/digitalmebius/status/2093164932481347865?s=61",
                                "https://x.com/bomberman573/status/2093171716218380544?s=61",
                                "https://x.com/gensosuikodensp/status/2093194361978728592?s=61",
-                               "https://x.com/kogado_studio/status/2093264115255181329?s=61"
+                               "https://x.com/kogado_studio/status/2093264115255181329?s=61",
+                               "https://x.com/BEEP_SHOP/status/2094694493354369465?s=20",
+                               "https://x.com/13z_game_jp/status/2096795628789768501?s=20"
                            ],
         "performerSns":  [
                              {
@@ -1140,10 +1437,10 @@
                               "https://x.com/kipi_84/status/2092926515436781847?s=61",
                               "https://x.com/ojigi_chandayo/status/2092871776531603602?s=61"
                           ],
-        "x":  0,
-        "y":  0,
-        "w":  0,
-        "h":  0
+        "x":  4727,
+        "y":  640,
+        "w":  746,
+        "h":  288
     },
     {
         "id":  "364",
@@ -1160,7 +1457,29 @@
                                "https://x.com/sanriogames_jp/status/2090260002003161536?s=61",
                                "https://x.com/sanriogames_jp/status/2090260256505147658?s=61",
                                "https://x.com/sanriogames_jp/status/2090260617576042614?s=61",
-                               "https://x.com/smash_festa/status/2094711878572224599?s=61"
+                               "https://x.com/smash_festa/status/2094711878572224599?s=61",
+                               "https://x.com/SanrioGames_JP/status/2096161421101007207?s=20",
+                               "https://x.com/SanrioKML_JP/status/2096433205440065916?s=20"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
+        "x":  848,
+        "y":  640,
+        "w":  561,
+        "h":  288
+    },
+    {
+        "id":  "365",
+        "boothNo":  "09-E03",
+        "name":  "ジー・モード",
+        "urlSns":  "https://x.com/GmodePR",
+        "urlPage":  "https://gmodecorp.com/",
+        "informationUrl":  [
+                               "https://x.com/hanoura_maze/status/2095362398244769961?s=20"
                            ],
         "performerSns":  [
 
@@ -1174,13 +1493,13 @@
         "h":  0
     },
     {
-        "id":  "365",
-        "boothNo":  "09-E03",
-        "name":  "ジー・モード",
-        "urlSns":  "https://x.com/GmodePR",
-        "urlPage":  "https://gmodecorp.com/",
+        "id":  "368",
+        "boothNo":  "-",
+        "name":  "ジェムドロップ",
+        "urlSns":  "https://x.com/Gemdrops_JA",
+        "urlPage":  "https://www.gemdrops.co.jp/tgs2026/",
         "informationUrl":  [
-                               "https://x.com/hanoura_maze/status/2095362398244769961?s=20"
+                               "https://x.com/Gemdrops_JA/status/2096871990506504217?s=20"
                            ],
         "performerSns":  [
 
@@ -1215,6 +1534,26 @@
         "h":  0
     },
     {
+        "id":  "370",
+        "boothNo":  "09-C60",
+        "name":  "シリアルゲームズ",
+        "urlSns":  "https://x.com/SERIALGAMES",
+        "urlPage":  "",
+        "informationUrl":  [
+                               "https://x.com/SERIALGAMES/status/2095330940335894719?s=20"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
+        "x":  0,
+        "y":  0,
+        "w":  0,
+        "h":  0
+    },
+    {
         "id":  "373",
         "boothNo":  "-",
         "name":  "スクウェア·エニックス",
@@ -1224,8 +1563,11 @@
                                "https://x.com/squareenix_jp/status/2095710736878305673?s=20",
                                "https://x.com/FFVIIR_CLOUD/status/2095711669909651692?s=20",
                                "https://x.com/DQ_PR/status/2095723530058969110?s=20",
+                               "https://x.com/DQ_PR/status/2096795846130188683?s=20",
                                "https://x.com/FF_XIV_JP/status/2095713311241486545?s=20",
-                               "https://x.com/FFRS_JP/status/2095799038733898201?s=20"
+                               "https://x.com/FFRS_JP/status/2095799038733898201?s=20",
+                               "https://x.com/FFRS_JP/status/2096433207973708094?s=20",
+                               "https://x.com/squareenix_jp/status/2096403011732115579?s=20"
                            ],
         "performerSns":  [
 
@@ -1253,6 +1595,76 @@
         "performerPost":  {
 
                           },
+        "x":  0,
+        "y":  0,
+        "w":  0,
+        "h":  0
+    },
+    {
+        "id":  "379",
+        "boothNo":  "-",
+        "name":  "スマイルゲート",
+        "urlSns":  "",
+        "urlPage":  "https://tgs.onstove.com/ja/home",
+        "informationUrl":  [
+                               "https://x.com/DDAC_GAME_JP/status/2095761276324782120?s=20",
+                               "https://x.com/DDAC_GAME_JP/status/2096795599186325658?s=20",
+                               "https://x.com/Miresi_jp/status/2087728712162877676?s=20",
+                               "https://x.com/Miresi_jp/status/2095761277863723251?s=20",
+                               "https://x.com/Miresi_jp/status/2096795596816253015?s=20"
+                           ],
+        "performerSns":  [
+                             {
+                                 "name":  "東雲うみ",
+                                 "url":  "https://x.com/sinonome_umi"
+                             },
+                             {
+                                 "name":  "伊織もえ",
+                                 "url":  "https://x.com/iorimoe_five"
+                             },
+                             {
+                                 "name":  "えなこ",
+                                 "url":  "https://x.com/enako_cos"
+                             },
+                             {
+                                 "name":  "雪村ユノ",
+                                 "url":  "https://x.com/yukimuraYY2"
+                             },
+                             {
+                                 "name":  "みぃこ / Miico",
+                                 "url":  "https://x.com/mmm_mii_"
+                             },
+                             {
+                                 "name":  "きっか",
+                                 "url":  "https://x.com/kikka_cos"
+                             },
+                             {
+                                 "name":  "東雲 うれは",
+                                 "url":  "https://x.com/ureha_82188"
+                             },
+                             {
+                                 "name":  "ゆずき",
+                                 "url":  "https://x.com/_yuzuking_919"
+                             },
+                             {
+                                 "name":  "るるか",
+                                 "url":  "https://x.com/mukaruka05"
+                             },
+                             {
+                                 "name":  "きのした㌠",
+                                 "url":  "https://x.com/kino_coo0"
+                             }
+                         ],
+        "performerPost":  [
+                              "https://x.com/sinonome_umi/status/2096900271838576728?s=20",
+                              "https://x.com/yukimuraYY2/status/2096818549318881468?s=20",
+                              "https://x.com/mmm_mii_/status/2096804770283655377?s=20",
+                              "https://x.com/kikka_cos/status/2096862955371712729?s=20",
+                              "https://x.com/ureha_82188/status/2096811749509067081?s=20",
+                              "https://x.com/_yuzuking_919/status/2096886442190619014?s=20",
+                              "https://x.com/mukaruka05/status/2096894525331603482",
+                              "https://x.com/kino_coo0/status/2096938978180272154?s=20"
+                          ],
         "x":  0,
         "y":  0,
         "w":  0,
@@ -1296,6 +1708,26 @@
         "h":  0
     },
     {
+        "id":  "567",
+        "boothNo":  "09-C12",
+        "name":  "そろえて☆マーメイドシアター",
+        "urlSns":  "https://x.com/soromamepuzzle",
+        "urlPage":  "",
+        "informationUrl":  [
+                               "https://x.com/soromamepuzzle/status/2095376241142775956?s=20"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
+        "x":  0,
+        "y":  0,
+        "w":  0,
+        "h":  0
+    },
+    {
         "id":  "392",
         "boothNo":  "05-C03",
         "name":  "ディースリー・パブリッシャー",
@@ -1303,6 +1735,26 @@
         "urlPage":  "https://www.d3p.co.jp/tgs2026/",
         "informationUrl":  [
                                "https://x.com/d3_publisher/status/2092085511926272466?s=61"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
+        "x":  0,
+        "y":  0,
+        "w":  0,
+        "h":  0
+    },
+    {
+        "id":  "566",
+        "boothNo":  "-",
+        "name":  "ニエンタム － オプス・ゼロ －",
+        "urlSns":  "https://x.com/nientum/status/2095814879886360916",
+        "urlPage":  "",
+        "informationUrl":  [
+                               "https://x.com/nientum/status/2095814879886360916?s=20"
                            ],
         "performerSns":  [
 
@@ -1325,7 +1777,28 @@
                                "https://x.com/nexon_shikyoku/status/2091758465396199674?s=20",
                                "https://x.com/Fareidolia_JP/status/2095799050268557646?s=20",
                                "https://x.com/Fareidolia_JP/status/2095436654710554956?s=20",
+                               "https://x.com/MabinogiM_JP/status/2096795835476660460?s=20",
                                "https://x.com/MabinogiM_JP/status/2091855552821526932?s=20"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
+        "x":  0,
+        "y":  0,
+        "w":  0,
+        "h":  0
+    },
+    {
+        "id":  "412",
+        "boothNo":  "-",
+        "name":  "ネストピ",
+        "urlSns":  "https://x.com/nestopi_inc",
+        "urlPage":  "",
+        "informationUrl":  [
+                               "https://x.com/NESTOPI_Inc/status/2096162932690477444?s=20"
                            ],
         "performerSns":  [
 
@@ -1391,7 +1864,8 @@
                                "https://x.com/gamefreak_info/status/2093262176073208073?s=61",
                                "https://x.com/tky_stories/status/2093262330419151216?s=61",
                                "https://x.com/taitoaselection/status/2092953044409627046?s=61",
-                               "https://x.com/nis_prinny/status/2094334378805780636?s=20"
+                               "https://x.com/nis_prinny/status/2094334378805780636?s=20",
+                               "https://x.com/lostmuseum_ofcl/status/2095678569087434991?s=20"
                            ],
         "performerSns":  [
 
@@ -1504,6 +1978,27 @@
         "urlPage":  "",
         "informationUrl":  [
                                "https://x.com/fumoshop/status/2095072099698458834?s=20"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
+        "x":  0,
+        "y":  0,
+        "w":  0,
+        "h":  0
+    },
+    {
+        "id":  "437",
+        "boothNo":  "09-C63",
+        "name":  "フリュー",
+        "urlSns":  "https://x.com/FURYUgames",
+        "urlPage":  "https://www.cs.furyu.jp/",
+        "informationUrl":  [
+                               "https://x.com/_Project_Alice/status/2096874242927370397?s=20",
+                               "https://x.com/AnomalyZCO/status/2092573086382162286?s=20"
                            ],
         "performerSns":  [
 
@@ -1690,6 +2185,47 @@
         "h":  0
     },
     {
+        "id":  "462",
+        "boothNo":  "-",
+        "name":  "ワンオアエイト",
+        "urlSns":  "https://x.com/OneorEightINC",
+        "urlPage":  "https://one-or-eight.co.jp/tgs2026/",
+        "informationUrl":  [
+                               "https://x.com/OneorEightINC/status/2094623301431914986?s=20",
+                               "https://x.com/OneorEightINC/status/2096795599567769753?s=20"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
+        "x":  0,
+        "y":  0,
+        "w":  0,
+        "h":  0
+    },
+    {
+        "id":  "209",
+        "boothNo":  "10-C03",
+        "name":  "声優e-Sports部",
+        "urlSns":  "",
+        "urlPage":  "",
+        "informationUrl":  [
+                               "https://x.com/seiyu_esports/status/2094712258962268666?s=61"
+                           ],
+        "performerSns":  [
+
+                         ],
+        "performerPost":  {
+
+                          },
+        "x":  0,
+        "y":  0,
+        "w":  0,
+        "h":  0
+    },
+    {
         "id":  "526",
         "boothNo":  "-",
         "name":  "東映ゲームズ",
@@ -1740,7 +2276,10 @@
         "informationUrl":  [
                                "https://x.com/kakehashigames/status/2094983882957598758?s=20",
                                "https://x.com/kakehashigames/status/2095346053566587095?s=20",
-                               "https://x.com/kakehashigames/status/2095727647875875110?s=20"
+                               "https://x.com/kakehashigames/status/2095727647875875110?s=20",
+                               "https://x.com/kakehashigames/status/2096795976929587698?s=20",
+                               "https://x.com/kakehashigames/status/2096079596475318446?s=20",
+                               "https://x.com/kakehashigames/status/2096798757853774020?s=20"
                            ],
         "performerSns":  [
 
@@ -1783,6 +2322,7 @@
         "urlPage":  "",
         "informationUrl":  [
                                "https://x.com/kodanshaGCL/status/2095708440828010524?s=20",
+                               "https://x.com/kodanshaGCL/status/2096403008728768593?s=20",
                                "https://x.com/V_roema/status/2095791787315167359?s=20",
                                "https://x.com/harf_way/status/2095734431898304934?s=20"
                            ],
