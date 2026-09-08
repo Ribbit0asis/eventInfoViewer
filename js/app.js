@@ -2,12 +2,14 @@
 
   const ASSET_VERSION = "1";
   const PLANNED_BOOTHS_KEY = "eventInfoViewer.plannedBooths";
+  const SORT_MODE_KEY = "eventInfoViewer.sortMode";
 
   let allBooths = [];
   let overlayInitialized = false;
   let activeBoothId = null;
   let activeTab = "all";
   let searchQuery = "";
+  let sortMode = loadSortMode(); // "default" | "boothNo"
   let boothRects = {};
   let boothListItems = {};
   let boothOverlayElements = {};
@@ -130,6 +132,22 @@
       }
   }
 
+  function loadSortMode() {
+      try {
+          return localStorage.getItem(SORT_MODE_KEY) === "boothNo" ? "boothNo" : "default";
+      } catch {
+          return "default";
+      }
+  }
+
+  function saveSortMode(mode) {
+      try {
+          localStorage.setItem(SORT_MODE_KEY, mode);
+      } catch {
+          // localStorageが使えない環境では保存をあきらめる
+      }
+  }
+
   function togglePlanned(boothId, isPlanned) {
       if (isPlanned) {
           plannedBoothIds.add(boothId);
@@ -156,19 +174,44 @@
       if (activeTab === "checked") renderBoothList();
   }
 
+  // boothNoは「ホール番号(2桁 or E)-方角1文字+連番2桁」の形式(例: 01-N02)
+  const BOOTH_DIRECTION_ORDER = { S: 0, E: 1, C: 2, N: 3, W: 4 };
+
+  function parseBoothNo(boothNo) {
+      const m = /^(\d+|[A-Za-z]+)-([A-Za-z])(\d+)$/.exec(boothNo || "");
+      if (!m) return null;
+      const [, hallRaw, dir, serialRaw] = m;
+      const hall = /^\d+$/.test(hallRaw) ? Number(hallRaw) : Infinity; // Eなど数値以外のホールは最後
+      const dirOrder = BOOTH_DIRECTION_ORDER[dir.toUpperCase()] ?? 99;
+      return { hall, dirOrder, serial: Number(serialRaw) };
+  }
+
+  function compareByBoothNo(a, b) {
+      const pa = parseBoothNo(a.boothNo);
+      const pb = parseBoothNo(b.boothNo);
+      if (!pa && !pb) return 0;
+      if (!pa) return 1;  // 未確定・不正な形式は末尾へ
+      if (!pb) return -1;
+      if (pa.hall !== pb.hall) return pa.hall - pb.hall;
+      if (pa.dirOrder !== pb.dirOrder) return pa.dirOrder - pb.dirOrder;
+      return pa.serial - pb.serial;
+  }
+
   function getVisibleBooths() {
+      let result;
       if (activeTab === "checked") {
-          return allBooths.filter(b => plannedBoothIds.has(b.id));
-      }
-      if (activeTab === "search") {
+          result = allBooths.filter(b => plannedBoothIds.has(b.id));
+      } else if (activeTab === "search") {
           const q = searchQuery.trim().toLowerCase();
           if (!q) return [];
           return allBooths.filter(b =>
               (b.boothNo && b.boothNo.toLowerCase().startsWith(q)) ||
               (b.name && b.name.toLowerCase().startsWith(q))
           );
+      } else {
+          result = allBooths;
       }
-      return allBooths;
+      return sortMode === "boothNo" ? result.slice().sort(compareByBoothNo) : result;
   }
 
   function setActiveTab(tab) {
@@ -194,6 +237,25 @@
       renderBoothList();
   });
 
+  function setSortMode(mode) {
+      sortMode = mode;
+      saveSortMode(mode);
+      const btn = document.getElementById("sort-toggle");
+      const active = mode === "boothNo";
+      btn.classList.toggle("sort-toggle-btn--active", active);
+      btn.setAttribute("aria-pressed", String(active));
+      btn.textContent = active ? "番号順" : "名前順";
+      btn.title = active ? "名前順に並び替え" : "ブース番号順に並び替え";
+      renderBoothList();
+  }
+
+  document.getElementById("sort-toggle").addEventListener("click", () => {
+      setSortMode(sortMode === "boothNo" ? "default" : "boothNo");
+  });
+
+  // localStorageに保存された並び替え設定をボタンの表示に反映する
+  setSortMode(sortMode);
+
   function setActiveBooth(boothId) {
       if (activeBoothId != null) {
           const prevItem = boothListItems[activeBoothId];
@@ -208,8 +270,8 @@
       if (overlay) overlay.classList.add("booth-overlay--active");
   }
 
-  const MIN_FOCUS_CONTEXT = 0.20;
-  const MAX_FOCUS_CONTEXT = 0.30;
+  const MIN_FOCUS_CONTEXT = 0.30;
+  const MAX_FOCUS_CONTEXT = 0.50;
 
   function focusBoothOnMap(boothId) {
       const rect = boothRects[boothId];
@@ -354,13 +416,17 @@
     if (performerLinks || performerPostUrls.length) sections.push({ key: "performers", label: "コンパニオン（敬称略）" });
 
     function renderPostsPagerHtml() {
-      return `
+      const nav = `
         <div class="detail-posts-nav">
           <button type="button" class="detail-posts-prev" aria-label="前のポスト">← 前へ</button>
           <span class="detail-posts-page"></span>
           <button type="button" class="detail-posts-next" aria-label="次のポスト">次へ →</button>
         </div>
+      `;
+      return `
+        ${nav}
         <div class="detail-posts-embed"></div>
+        ${nav}
       `;
     }
     const postsPanelHtml = renderPostsPagerHtml();
@@ -421,8 +487,16 @@
     prevBtn.classList.toggle("detail-link--disabled", !prevBooth);
     nextBtn.disabled = !nextBooth;
     nextBtn.classList.toggle("detail-link--disabled", !nextBooth);
-    if (prevBooth) prevBtn.addEventListener("click", () => showBoothDetail(prevBooth));
-    if (nextBooth) nextBtn.addEventListener("click", () => showBoothDetail(nextBooth));
+    if (prevBooth) prevBtn.addEventListener("click", () => {
+        setActiveBooth(prevBooth.id);
+        focusBoothOnMap(prevBooth.id);
+        showBoothDetail(prevBooth);
+    });
+    if (nextBooth) nextBtn.addEventListener("click", () => {
+        setActiveBooth(nextBooth.id);
+        focusBoothOnMap(nextBooth.id);
+        showBoothDetail(nextBooth);
+    });
 
     detail.classList.add("is-open");
     detail.querySelector(".detail-close").focus();
@@ -467,26 +541,42 @@
   function setupPostPager(detail, postUrls) {
       let index = 0;
       const embed = detail.querySelector(".detail-posts-embed");
-      const pageLabel = detail.querySelector(".detail-posts-page");
-      const nav = detail.querySelector(".detail-posts-nav");
-      const prevBtn = detail.querySelector(".detail-posts-prev");
-      const nextBtn = detail.querySelector(".detail-posts-next");
+      const navs = detail.querySelectorAll(".detail-posts-nav");
+      const pageLabels = detail.querySelectorAll(".detail-posts-page");
+      const prevBtns = detail.querySelectorAll(".detail-posts-prev");
+      const nextBtns = detail.querySelectorAll(".detail-posts-next");
+      const topNav = navs[0];
 
-      nav.style.display = postUrls.length > 1 ? "flex" : "none";
+      navs.forEach((nav) => {
+          nav.style.display = postUrls.length > 1 ? "flex" : "none";
+      });
 
       function renderCurrent() {
           embed.innerHTML = `<blockquote class="twitter-tweet" data-dnt="true"><a href="${escapeHtml(postUrls[index])}"></a></blockquote>`;
-          pageLabel.textContent = `${index + 1} / ${postUrls.length}`;
-          prevBtn.disabled = index === 0;
-          nextBtn.disabled = index === postUrls.length - 1;
+          pageLabels.forEach((label) => {
+              label.textContent = `${index + 1} / ${postUrls.length}`;
+          });
+          prevBtns.forEach((btn) => { btn.disabled = index === 0; });
+          nextBtns.forEach((btn) => { btn.disabled = index === postUrls.length - 1; });
           renderTwitterEmbeds(embed);
       }
 
-      prevBtn.addEventListener("click", () => {
-          if (index > 0) { index--; renderCurrent(); }
+      // 下部のボタンで切り替えた場合は、上部の前へ/次へボタンが見える位置まで自動スクロールする
+      prevBtns.forEach((btn, i) => {
+          btn.addEventListener("click", () => {
+              if (index === 0) return;
+              index--;
+              renderCurrent();
+              if (i > 0 && topNav) topNav.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          });
       });
-      nextBtn.addEventListener("click", () => {
-          if (index < postUrls.length - 1) { index++; renderCurrent(); }
+      nextBtns.forEach((btn, i) => {
+          btn.addEventListener("click", () => {
+              if (index === postUrls.length - 1) return;
+              index++;
+              renderCurrent();
+              if (i > 0 && topNav) topNav.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          });
       });
 
       renderCurrent();
