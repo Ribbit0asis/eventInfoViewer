@@ -1,6 +1,6 @@
-  const SHOW_MAP = false;
+  const SHOW_MAP = true;
 
-  const ASSET_VERSION = "1";
+  const ASSET_VERSION = "2";
   const PLANNED_BOOTHS_KEY = "eventInfoViewer.plannedBooths";
   const SORT_MODE_KEY = "eventInfoViewer.sortMode";
 
@@ -690,7 +690,6 @@
       const x_px = Math.round(imagePoint.x);
       const y_px = Math.round(imagePoint.y);
 
-      console.log("クリック位置(px):", x_px, y_px);
 
     });
   }
