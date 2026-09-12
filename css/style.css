@@ -427,7 +427,12 @@ body {
   container-type: size;
 }
 .booth-overlay-label {
-  font-size: 18cqmin;
+  font-size: 16cqmin;
+  width: 100%;
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 .booth-overlay--planned {
   background-color: rgba(255, 66, 110, 1.0);

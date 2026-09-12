@@ -313,7 +313,7 @@
 
       const label = document.createElement("span");
       label.className = "booth-overlay-label";
-      label.textContent = booth ? booth.boothNo : "";
+      label.textContent = booth ? booth.name : "";
       div.appendChild(label);
 
       const activate = () => {
